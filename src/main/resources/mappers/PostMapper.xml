@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="com.project.footballkorea.files.dao.postDAO">
+ 
+ 	<insert id="postUpDAO" parameterType="map">
+ 	
+ 		INSERT INTO `freeboard`
+ 		(
+ 			`userId`
+ 			, `userNickname`
+ 			, `iconPath`
+ 			, `title`
+ 			, `content`
+ 			, `visit`
+ 			, `comments`
+ 			, `createdAt`
+ 			, `updatedAt`
+ 		)
+ 		VALUE
+ 		(
+ 			#{userId}
+ 			, #{userNickname}
+ 			, #{iconPath}
+ 			, #{title}
+ 			, #{content}
+ 			, 0
+ 			, 0
+ 			, now()
+ 			, now()
+ 		
+ 		)
+ 	
+ 	
+ 	
+ 	</insert>
+ 
+ 	<select id="selectPostListDAO" resultType="com.project.footballkorea.files.model.Freeboard">
+ 		
+ 		SELECT 
+ 			`id`
+ 			, `userId`
+ 			, `userNickname`
+ 			, `iconPath`
+ 			, `title`
+ 			, `content`
+ 			, `visit`
+ 			, `comments`
+ 			, `createdAt`
+ 			, `updatedAt`
+ 		FROM 
+ 			`freeboard`
+ 		ORDER BY `id` DESC
+ 	
+ 	
+ 	</select>
+ 	
+ 	<select id="selectPostDetailDAO" resultType="com.project.footballkorea.files.model.Freeboard">
+ 		
+ 		SELECT * FROM `freeboard` 
+ 		WHERE `id` = #{id}
+ 
+ 	</select>
+
+ 	<update id="countVisitDAO" parameterType="map">
+ 		
+ 		UPDATE 
+ 			`freeboard`
+ 		SET
+ 			`visit` = `visit` + 1
+ 		WHERE
+ 			`id` = #{id}
+ 	
+ 	
+ 	</update>
+
+ 	<update id="countCommentsDAO" parameterType="map">
+ 		
+ 		UPDATE
+ 			`freeboard`
+ 		SET
+ 			`comments` = `comments` + 1
+ 		WHERE
+ 			`id` = #{id}
+ 	
+ 	
+ 	</update>
+ 	
+ 	<update id="countCommentsDelDAO" parameterType="map">
+ 		
+ 		UPDATE
+ 			`freeboard`
+ 		SET
+ 			`comments` = `comments` - 1
+ 		WHERE
+ 			`id` = #{id}
+ 	
+ 	</update>
+ 
+ 
+ </mapper>

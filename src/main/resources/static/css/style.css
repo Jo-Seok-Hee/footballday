@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+#logo {
+	
+	width:600px;
+}
+
+#logoImg{
+	width:100px;
+}
+
+#logoBall {
+	height:75px;
+	width:75px;
+}
+
+#flag {
+	height:100px;
+}
+
+#search-input {
+	width:320px;
+}
+
+.form-outline {
+	outline-style:solid;
+	outline: 5px solid #3c94d6;
+}
+
+#search-button {
+	background-color:#3c94d6;
+	outline: 5px solid #3c94d6;
+}
+
+#menuBar {
+	height:60px;
+	background-color:#3c94d6;
+}
+
+#footerText {
+	opacity:0.5;
+}
+
+.btn {
+	background-color:#3c94d6;
+	
+}
+
+.signBtn {
+	width:90px;
+}
+
+#loginBox {
+	width:300px;
+}
+
+.loginBox {
+	width:240px;
+}
+
+#registBox {
+	width:300px;
+}
+
+#loginIdInput {
+	width:200px;
+}
+
+.postTable {
+    width: 100%;
+    border-bottom: 1px solid #29367c;
+    font-family: -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",arial,굴림,Gulim,sans-serif;
+}
+
+.sectionBox {
+	border: #3c94d6 3px solid;
+	box-sizing: border-box;
+	height:auto;
+
+}
+
+.postTableBox {
+	border: black 1px solid;
+	box-sizing: border-box;
+
+
+}
+
+.postUpTitle {
+	width:630px;
+	height: 40px;
+}
+
+textarea {
+	padding: 10px 0 0 10px;
+}
+
+.img-icon {
+	font-size:25px;
+
+}
+
+.tableLine {
+	height:50px;
+}
+
+.postViewBox {
+	border: black 1px solid;
+	box-sizing: border-box;
+	background-color:white;
+}
+
+#leagueId {
+	height:30px;
+	font-size:12px;
+}
+
+table {
+	border: 1px solid #444444;
+}
+
+#leagueTable {
+	height:100px;
+}
+
+.previewBox {
+	height:300px;
+	border: 1px solid #d9e5fc;
+}
+
+.newsBox {
+	height:100px;
+}
+#newsSection {
+	height:700px;
+}
+
+.notice-alarm {
+	background-color: #d9e5fc;
+	
+}
+
+#recentNews {
+	width:800px;
+	border-right:1px solid #d9e5fc;
+}
+
+#bestNews {
+	width:310px;
+}
+
+.newsPicture {
+	width:260px;
+	height:120px;
+}
+
+.freeboard{
+	
+	width:800px;
+}
+
+#rightSection{
+	
+	width:310px;
+}
+
+.freeboardFont {
+	font-size:14px;
+}
+
+.inputBorder {
+	border: 3px solid  #d9e5fc;
+}
+
+.userIcon {
+	width:40px;
+	height:40px;
+}
+
+.commentBox {
+	background-color: #d9e5fc;
+	border:black 2px solid;
+	box-sizing: border-box;
+	border-radius : 10px;
+}
+
+.commentInput {
+	background-color: #d9e5fc;
+	border: none;
+}
+
+.commentInput-input:focus{
+	outline:none;
+}
+
+.postBtnDesign {
+	border: none;
+	border-radius : 10px;
+}
+
+.postBtnDesign-input:focus{
+	
+	outline:none;
+}
+
+.sectionBox-match {
+	border: #0b439e 3px solid;
+	box-sizing: border-box;
+	height:auto;
+
+}
+
+#leagueDate {
+	width:537px;
+
+}
+
+#league-logo {
+	width:50px;
+	height:40px;
+}
+
+#date-box {
+	
+	height:100px;
+}
+
+.dateDetail-img {
+	width:30px;
+	height:30px;
+}
+
+.dateDetail-hr {
+	border-right:#d9e5fc 1px solid;
+}
+
+.premierLeague {
+	background-color:#381078;
+}
+
+.bundesliga {
+	
+	background-color:#cc0606;
+}
+
+.serie {
+	background-color:#2b00b8;
+}
+
+.laliga {
+	background-color:#c71278;
+}
+
+.matchDate-font{
+	font-size:26px;
+}
+
+.priviewNews-img {
+	width:130px;
+	height:90px;
+}
+
+.news-company-report{
+	
+	font-size:12px;
+	opacity:0.5;
+}
